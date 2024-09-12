@@ -1,0 +1,183 @@
+/* Layout.css */
+
+/* Estilos para el body */
+body {
+    margin: 0;
+    padding: 0;
+    width: 1920px; /* Ancho fijo de 1920px */
+    height: 1080px; /* Alto fijo de 1080px */
+    display: flex;
+    justify-content: flex-start; /* Alineación hacia la izquierda */
+    align-items: flex-start; /* Alineación hacia la parte superior */
+    box-sizing: border-box; /* Incluye el padding y border en el tamaño total */
+    overflow: hidden; /* Evita barras de desplazamiento */
+    background-color: #f8f9fa; /* Color de fondo opcional */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    gap: 20px; /* Espaciado entre columnas */
+    width: 90%; /* Ajusta a toda la anchura del body */
+    height: 100%; /* Ajusta a toda la altura del body */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+/* Aside.css */
+
+/* Estilo para el aside */
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaciado entre los cuadros */
+    width: 387px; /* Ancho específico para aside */
+    height: 398px; /* Alto específico para aside */
+    padding: 10px;
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+    position: relative;
+    top: -4rem;
+}
+
+/* Estilo para los cuadros internos del aside */
+.aside-box {
+    flex: 1; /* Permite que los cuadros crezcan proporcionalmente */
+    background-color:chocolate; /* Color de fondo de los cuadros */
+    border: 1px solid #bbb; /* Borde de los cuadros */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Article.css */
+
+/* Estilo para el artículo */
+.article {
+    width: 724px; /* Ancho específico para el artículo */
+    height: 1016px; /* Alto específico para el artículo */
+    background-color:darkorchid; /* Color de fondo del artículo */
+    border: 1px solid #ccc; /* Borde del artículo */
+    padding: 6px; /* Espaciado interno del artículo */
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    gap: 3px; /* Espaciado entre elementos */
+    position: relative;
+    left: -1rem;
+}
+
+/* Estilo para los cuadros internos del artículo */
+.box {
+    background-color: green; /* Color de fondo de los cuadros */
+    border: 1px solid #bbb; /* Borde de los cuadros */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    top: -4rem;
+}
+
+/* Estilo específico para el primer párrafo (cuadro vertical) */
+.box.p1 {
+    width: 672px; 
+    height: 276px; 
+}
+
+
+/* Estilo específico para los otros dos párrafos (cuadros horizontales) */
+.box.p2, .box.p3 {
+    width: 323px;
+    height: 533px; 
+    position: relative;
+    top: -5rem;
+}
+
+/* Estilo para los párrafos distribuidos en la sección */
+.article .box-container {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    gap: 20px; /* Espaciado entre elementos */
+}
+
+.article .box-container.horizontal {
+    flex-direction: row; /* Organiza los elementos en una fila para distribución horizontal */
+    gap: 20px; /* Espaciado entre elementos */
+}
+
+.article h1{
+    font-size: 32px;
+    line-height: 1.2;
+    display: flex;
+    position: relative;
+    top: -2rem;
+    left: 14rem;
+
+}
+/* Estilo para el contenedor del formulario */
+.right-side {
+    display: flex;
+    justify-content: flex-end; /* Coloca el formulario a la derecha */
+    height: 100vh; /* Ocupa toda la altura de la vista */
+    align-items: center; /* Centra verticalmente el formulario en la pantalla */
+    padding-right: 20px; /* Espaciado derecho opcional */
+}
+
+/* Estilo para el formulario */
+.form {
+    width: 724px; /* Ancho específico para el formulario */
+    height: 1016px; /* Alto específico para el formulario */
+    background-color:darkorchid; /* Color de fondo del formulario */
+    border: 1px solid #ccc; /* Borde del formulario */
+    padding: 20px; /* Espaciado interno del formulario */
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    gap: 20px; /* Espaciado entre elementos del formulario */
+    align-items: center; /* Centra los elementos horizontalmente dentro del formulario */
+    position: relative; /* Ajusta el formulario al final de la pantalla */
+    left: -2rem;
+}
+
+/* Estilo para los campos de entrada */
+.input {
+    width: 672px; /* Ancho específico para los campos de entrada */
+    height: 75px; /* Alto específico para los campos de entrada */
+    padding: 10px; /* Espaciado interno del campo de entrada */
+    border: 1px solid #ccc; /* Borde del campo de entrada */
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 4px; /* Bordes redondeados opcionales */
+    position: relative;
+    top: 1rem;
+    left: -1rem;
+}
+
+/* Estilo para el botón */
+.button {
+    width: 461px; /* Ancho específico para el botón */
+    height: 100px; /* Alto específico para el botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 4px; /* Bordes redondeados opcionales */
+    font-size: 18px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor cuando pasa sobre el botón */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el texto dentro del botón */
+    transition: background-color 0.3s; /* Transición para el cambio de color */
+    position: relative;
+    top: 1rem ;
+    left: -8rem;
+}
+
+/* Efecto hover para el botón */
+.button:hover {
+    background-color: #0056b3; /* Color de fondo cuando se pasa el mouse sobre el botón */
+}
+
+
+
